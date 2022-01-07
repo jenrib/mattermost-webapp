@@ -94,8 +94,8 @@ const EmojiPicker = ({
     }, [emojiMap, userSkinTone, recentEmojis]);
 
     useEffect(() => {
-        const updatedcategoryOrEmojisRows = createCategoryAndEmojiRows(allEmojis, categories, filter, userSkinTone);
-        setCategoryOrEmojisRows(updatedcategoryOrEmojisRows);
+        const updatedCategoryOrEmojisRows = createCategoryAndEmojiRows(allEmojis, categories, filter, userSkinTone);
+        setCategoryOrEmojisRows(updatedCategoryOrEmojisRows);
     }, [filter, userSkinTone, Object.keys(allEmojis).join(','), categoryNames.join(',')]);
 
     // Hack for getting focus on search input when tab changes to emoji from gifs
