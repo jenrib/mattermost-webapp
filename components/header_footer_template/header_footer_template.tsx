@@ -122,10 +122,10 @@ export default class NotLoggedIn extends React.PureComponent<Props> {
                                 id='company_name'
                                 className='pull-right footer-site-name'
                             >
-                                {'Mattermost'}
+                                {'Assemblies'}
                             </span>
                         </div>
-                        <div className='col-xs-12'>
+                       {/* <div className='col-xs-12'>
                             <span
                                 id='copyright'
                                 className='pull-right footer-link copyright'
@@ -134,8 +134,8 @@ export default class NotLoggedIn extends React.PureComponent<Props> {
                             </span>
                             <span className='pull-right'>
                                 {content}
-                            </span>
-                        </div>
+        </span>
+                        </div>*/}
                     </div>
                 </div>
             </div>
