@@ -308,7 +308,7 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
                             </button>
                         </div>
                     </div>
-                   {/* <div className='NextStepsView__body-graphic'>
+                   {/*<div className='NextStepsView__body-graphic'>
                        <GettingStartedSvg/>
                         </div>*/}
                 </div>
