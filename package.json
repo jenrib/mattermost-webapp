@@ -1,5 +1,5 @@
 {
-  "name": "@jenrib/webapp",
+  "name": "@jenrib/mattermost-webapp",
   "browser": {
     "./client/web_client.jsx": "./client/browser_web_client.jsx"
   },
