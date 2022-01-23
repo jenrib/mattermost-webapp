@@ -1,9 +1,9 @@
 {
-  "name": "@mattermost/webapp",
+  "name": "@jenrib/webapp",
   "browser": {
     "./client/web_client.jsx": "./client/browser_web_client.jsx"
   },
-  "version": "5.36.0-0",
+  "version": "5.36.0-2",
   "private": true,
   "dependencies": {
     "@mattermost/compass-components": "^0.2.12",
@@ -294,6 +294,13 @@
     "build-storybook": "build-storybook -s ./storybook/static",
     "check-types": "tsc",
     "make-emojis": "node --experimental-json-modules build/emoji/emoji_gen.mjs"
+  },
+  "repositoy": {
+    "type": "git",
+    "url": "https://npm.pkg.github.com/@jenrib/webapp"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@jenrib"
   },
   "workspaces": []
 }

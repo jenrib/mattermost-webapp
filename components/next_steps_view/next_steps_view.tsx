@@ -18,11 +18,11 @@ import loadingIcon from 'images/spinner-48x48-blue.apng';
 
 import {StepType} from './steps';
 import './next_steps_view.scss';
-import OnboardingBgSvg from './images/onboarding-bg-svg';
-import GettingStartedSvg from './images/getting-started-svg';
-import CloudLogoSvg from './images/cloud-logo-svg';
-import LogoSvg from './images/logo-svg';
-import OnboardingSuccessSvg from './images/onboarding-success-svg';
+//import OnboardingBgSvg from './images/onboarding-bg-svg';
+//import GettingStartedSvg from './images/getting-started-svg';
+//import CloudLogoSvg from './images/cloud-logo-svg';
+//import LogoSvg from './images/logo-svg';
+// import OnboardingSuccessSvg from './images/onboarding-success-svg';
 
 const TRANSITION_SCREEN_TIMEOUT = 3000;
 
@@ -271,7 +271,7 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
                         <h1 className='NextStepsView__header-headerTopText'>
                             <FormattedMessage
                                 id='next_steps_view.welcomeToMattermost'
-                                defaultMessage='Welcome to Mattermost'
+                                defaultMessage='Welcome to Assemblies'
                             />
                         </h1>
                         <h2 className='NextStepsView__header-headerBottomText'>
@@ -308,9 +308,9 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
                             </button>
                         </div>
                     </div>
-                    <div className='NextStepsView__body-graphic'>
-                        <GettingStartedSvg/>
-                    </div>
+                   {/*<div className='NextStepsView__body-graphic'>
+                       <GettingStartedSvg/>
+                        </div>*/}
                 </div>
             </div>
         );
