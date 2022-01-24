@@ -18,10 +18,10 @@ import loadingIcon from 'images/spinner-48x48-blue.apng';
 
 import {StepType} from './steps';
 import './next_steps_view.scss';
-//import OnboardingBgSvg from './images/onboarding-bg-svg';
-//import GettingStartedSvg from './images/getting-started-svg';
-//import CloudLogoSvg from './images/cloud-logo-svg';
-//import LogoSvg from './images/logo-svg';
+// import OnboardingBgSvg from './images/onboarding-bg-svg';
+// import GettingStartedSvg from './images/getting-started-svg';
+// import CloudLogoSvg from './images/cloud-logo-svg';
+// import LogoSvg from './images/logo-svg';
 // import OnboardingSuccessSvg from './images/onboarding-success-svg';
 
 const TRANSITION_SCREEN_TIMEOUT = 3000;
@@ -229,7 +229,7 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
                 })}
             >
                 <div className='NextStepsView__transitionBody'>
-                    <OnboardingSuccessSvg/>
+                    {/*<OnboardingSuccessSvg/>*/}
                     <h1 className='NextStepsView__transitionTopText'>
                         <FormattedMessage
                             id='next_steps_view.nicelyDone'
@@ -257,7 +257,7 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
             lastNonCompletedStep = nonCompletedSteps[0];
         }
 
-        const logo = this.props.isCloud ? <CloudLogoSvg/> : <LogoSvg/>;
+        // const logo = this.props.isCloud ? <CloudLogoSvg/> : <LogoSvg/>;
 
         return (
             <div
@@ -282,7 +282,7 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
                         </h2>
                     </div>
                     <div className='NextStepsView__header-logo'>
-                        {logo}
+                        {/*{logo}*/}
                     </div>
                 </header>
                 <div className='NextStepsView__body'>
@@ -308,9 +308,6 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
                             </button>
                         </div>
                     </div>
-                   {/*<div className='NextStepsView__body-graphic'>
-                       <GettingStartedSvg/>
-                        </div>*/}
                 </div>
             </div>
         );
@@ -324,7 +321,7 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
             >
                 {this.state.show &&
                 <>
-                    <OnboardingBgSvg/>
+                    {/*<OnboardingBgSvg/>*/}
                     {this.renderMainBody()}
                     {this.renderTransitionScreen()}
                 </>}
