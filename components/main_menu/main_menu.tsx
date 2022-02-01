@@ -23,7 +23,7 @@ import LeaveTeamModal from 'components/leave_team_modal';
 import UserSettingsModal from 'components/user_settings/modal';
 import TeamMembersModal from 'components/team_members_modal';
 import TeamSettingsModal from 'components/team_settings_modal';
-import AboutBuildModal from 'components/about_build_modal';
+//import AboutBuildModal from 'components/about_build_modal';
 import AddGroupsToTeamModal from 'components/add_groups_to_team_modal';
 
 import Menu from 'components/widgets/menu/menu';
@@ -44,7 +44,7 @@ export type Props = {
     teamName?: string;
     siteName?: string;
     currentUser?: UserProfile;
-    appDownloadLink?: string;
+  //  appDownloadLink?: string;
     enableCommands: boolean;
     enableIncomingWebhooks: boolean;
     enableOAuthServiceProvider: boolean;
@@ -52,8 +52,8 @@ export type Props = {
     canManageSystemBots: boolean;
     canManageIntegrations: boolean;
     experimentalPrimaryTeam?: string;
-    helpLink?: string;
-    reportAProblemLink?: string;
+  //  helpLink?: string;
+ //   reportAProblemLink?: string;
     moreTeamsToJoin: boolean;
     pluginMenuItems?: PluginComponent[];
     isMentionSearch?: boolean;
@@ -334,12 +334,12 @@ export class MainMenu extends React.PureComponent<Props> {
                 </Menu.Group>
                 <Menu.Group>
                     <Menu.ItemExternalLink
-                        id='helpLink'
-                        show={Boolean(this.props.helpLink)}
-                        url={this.props.helpLink}
-                        text={formatMessage({id: 'navbar_dropdown.help', defaultMessage: 'Help'})}
-                        icon={<i className='fa fa-question'/>}
-                    />
+                    //    id='helpLink'
+                    //    show={Boolean(this.props.helpLink)}
+                   //     url={this.props.helpLink}
+                   //     text={formatMessage({id: 'navbar_dropdown.help', defaultMessage: 'Help'})}
+                   //     icon={<i className='fa fa-question'/>}
+                  //  />
                     <Menu.ItemAction
                         id='gettingStarted'
                         show={this.props.showDueToStepsNotFinished && !inTipsView}
@@ -348,26 +348,26 @@ export class MainMenu extends React.PureComponent<Props> {
                         icon={<i className='icon icon-play'/>}
                     />
                     <Menu.ItemExternalLink
-                        id='reportLink'
-                        show={Boolean(this.props.reportAProblemLink)}
-                        url={this.props.reportAProblemLink}
-                        text={formatMessage({id: 'navbar_dropdown.report', defaultMessage: 'Report a Problem'})}
-                        icon={<i className='fa fa-phone'/>}
+                //        id='reportLink'
+                 //       show={Boolean(this.props.reportAProblemLink)}
+                //        url={this.props.reportAProblemLink}
+                //        text={formatMessage({id: 'navbar_dropdown.report', defaultMessage: 'Report a Problem'})}
+                //        icon={<i className='fa fa-phone'/>}
                     />
-                    <Menu.ItemExternalLink
-                        id='nativeAppLink'
-                        show={this.props.appDownloadLink && !UserAgent.isMobileApp()}
-                        url={useSafeUrl(this.props.appDownloadLink || '')}
-                        text={formatMessage({id: 'navbar_dropdown.nativeApps', defaultMessage: 'Download Apps'})}
-                        icon={<i className='fa fa-mobile'/>}
-                    />
-                    <Menu.ItemToggleModalRedux
-                        id='about'
-                        modalId={ModalIdentifiers.ABOUT}
-                        dialogType={AboutBuildModal}
-                        text={formatMessage({id: 'navbar_dropdown.about', defaultMessage: 'About {appTitle}'}, {appTitle: this.props.siteName || 'Mattermost'})}
-                        icon={<i className='fa fa-info'/>}
-                    />
+                   <Menu.ItemExternalLink
+                  //      id='nativeAppLink'
+                  //      show={this.props.appDownloadLink && !UserAgent.isMobileApp()}
+                  //      url={useSafeUrl(this.props.appDownloadLink || '')}
+                   //     text={formatMessage({id: 'navbar_dropdown.nativeApps', defaultMessage: 'Download Apps'})}
+                   //     icon={<i className='fa fa-mobile'/>}
+                   />
+                  //  <Menu.ItemToggleModalRedux
+                  //      id='about'
+                 //       modalId={ModalIdentifiers.ABOUT}
+                 //       dialogType={AboutBuildModal}
+                 //       text={formatMessage({id: 'navbar_dropdown.about', defaultMessage: 'About {appTitle}'}, {appTitle: this.props.siteName || 'Mattermost'})}
+                 //       icon={<i className='fa fa-info'/>}
+                   />
                 </Menu.Group>
                 <Menu.Group>
                     <Menu.ItemAction
